@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Ryerson</h2>
+
+
+<p>
+Ryerson University is located in the heart of downtown Toronto. Ryerson is known for their creative classes 
+<br>and programs such as Philosophy of Beauty, Forensic Sciences and Geography of Las Vegas. 
+<br>Additionally Ryerson prides itself on its community aspects with over 200 clubs and committees. 
+
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Business</li>
+  <li>Engineering</li>
+  <li>Architecture</li>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/place/Ryerson+University/@43.6576585,-79.3809904,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cb35431c1395:0xe8ed8bd69125d6f4!8m2!3d43.6576585!4d-79.3788017">Map</a></li>
+  <li>Heart of downtown Toronto</li>
+
+  <dt>Number of Students:</dt>
+  <li>36,347</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition 7,574.96 CAD </li>
+  <li>International tuition 24,792.2 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Need low 80s to be considered for most programs </li>
+  <li>No supplementary application form </li>
+
+  <dt>International rating:</dt>
+  <li>801</li>
+
+  <dt>Canadian rating:</dt>
+  <li>22</li>
+
+  <dt>Average class size:</dt>
+  <li>25</li>
+</ul>
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>David Anaglate</p>
+    <p class="author">- Ghanaian journalist, lawyer, public servant and diplomat, Director General of the Ghana Broadcasting Corporation from 1992 to 1995, studied Radio-TV Arts at Ryerson University</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Dan Levy</p>
+    <p class="author">- actor, writer, director, and producer, studied film production ad Ryerson</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Robert D. Richards</p>
+    <p class="author">- space entrepreneur and co-founder and CEO of Moon Express, Inc, and co-founder of  the International Space University, atended Ryerson university</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>UofT</h2>
+
+
+
+<p>The University of Toronto is a globally recognized research university and has a huge prestige 
+<br>on global educational markets. It comprises three campuses located in Scarborough, Mississauga, 
+<br>and Downtown Toronto. With students from over 159 different countries and regions, U of T is 
+<br>one of the most diversified institutions within Canada. It offers over 700 undergraduate and 
+<br>300 graduate programs in a wide range of fields, which ensures that there is a suitable 
+<br>program for everyone. The university has secured a top ranking in Canada for several consecutive 
+<br>years and continues to be the hub of innovation, diversity, and knowledge. </p>
+
+<ul>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/place/University+of+Toronto+-+St.+George+Campus/@43.6628917,-79.3978451,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34b8f331fd9b:0x8d1d9bb6765a76f7!8m2!3d43.6628917!4d-79.3956564">Map</a></li>
+  <li>University of Toronto Scarborough​</li>
+  <li>University of Toronto St.George </li>
+  <li>University of Toronto Mississauga ​</li>
+
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition is $6,100 to $14,180 CAD</li>
+  <li>International Tuition is $35,890 to $58,680 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Ontario Secondary School Diploma (OSSD) with six Grade 12 U/M subjects, including ENG4U</li>
+  <li>MCV4U is required for programs with the Calculus prerequisite</li>
+  <li>English Proficiency test is required for international students</li>
+
+  <dt>International rating:</dt>
+  <li>20th</li>
+
+  <dt>Canadian rating:</dt>
+  <li>1st</li>
+
+  <dt>Average class size:</dt>
+  <li>Approximately 300 students </li>
+</ul>
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>The Right Honourable William Lyon Mackenzie King, OM CMG PC</p>
+    <p class="author">- Former prime minister, obtained three degrees from the University of Toronto</p>
+  </div>
+
+  <div class="mySlides">
+    <p>The Right Honourable Lester B. Pearson, PC OM CC OBE</p>
+    <p class="author">- former prime minister introduced universal health care, the Canada Student Loan Program, the Canada Pension Plan, the Order of Canada, and the Maple Leaf flag, he unified Canada's armed forces, convened the Royal Commission on Bilingualism and Biculturalism, and kept Canada out of the Vietnam War, Et Cetera, after returning from Oxford he taught at UofT</p>
+  </div>
+
+  <div class="mySlides">
+    <p>John Charles Fields</p>
+    <p class="author">- founded the Fields Medal, lectured at UofT</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Sir Frederick Grant Banting, KBE MC FRS FRSC</p>
+    <p class="author">- medical scientist, physician, painter, and Nobel laureate noted as the co-discoverer of insulin, studied medicine at UofT</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Roberta Bondar, CC OOnt FRCPC FRSC</p>
+    <p class="author">- Canada's first female astronaut and the first neurologist in space, recieved a PHD in nuroscience at UofT</p>
+  </div>
+
+  <div class="mySlides">
+    <p>The Right Honourable Julie Payette, CC CMM COM CQ CD</p>
+    <p class="author">- engineer, scientist and former astronaut who served as the 29th Governor General of Canada, completed a Master of Applied Science degree in computer engineering at the University of Toronto</p>
+  </div>
+
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+//var subjectObject = {
+//  "Front-end": {
+//    "HTML": ["Links", "Images", "Tables", "Lists"],
+//    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+//    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]
+//  },
+//  "Back-end": {
+//    "PHP": ["Variables", "Strings", "Arrays"],
+//    "SQL": ["SELECT", "UPDATE", "DELETE"]
+//  }
+//}
+//window.onload = function() {
+//  var subjectSel = document.getElementById("subject");
+//  var topicSel = document.getElementById("topic");
+//  var chapterSel = document.getElementById("chapter");
+//  for (var x in subjectObject) {
+//    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+//  }
+//  subjectSel.onchange = function() {
+//    //empty Chapters- and Topics- dropdowns
+//    chapterSel.length = 1;
+//    topicSel.length = 1;
+//    //display correct values
+//    for (var y in subjectObject[this.value]) {
+//      topicSel.options[topicSel.options.length] = new Option(y, y);
+//    }
+//  }
+//  topicSel.onchange = function() {
+//    //empty Chapters dropdown
+//    chapterSel.length = 1;
+//    //display correct values
+//    var z = subjectObject[subjectSel.value][this.value];
+//    for (var i = 0; i < z.length; i++) {
+//      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+//    }
+//  }
+//}
+</script>
+
+</body>
+<!-- n- -->
+</html>

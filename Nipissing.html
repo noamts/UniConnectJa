@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Nipissing</h2>
+
+<p>Nippissing is a small liberal arts university located near Lake Huron and in the heart of nature.
+<br>Nippissing is known for its small student body of just over 5000, and small ratio of students to faculty. 
+<br>Nippissing offers over 25 different programs and is home to 7 different varsity sports teams including soccer, 
+<br>basketball and volleyball. Nippising was founded in 1992 and has a great relationship with the community of North Bay. </p>
+
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Art and sciences </li>
+  <li>Environmental and Physical Geography</li>
+  <li>Teaching</li>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/place/Nipissing+University/@46.3432094,-79.4944905,17z/data=!3m1!4b1!4m5!3m4!1s0x4d28ffd8ef46c809:0xf02e7508e9d98b7b!8m2!3d46.3432094!4d-79.4923018">Map</a></li>
+  <li>Located in North Bay </li>
+  <li>On the border of Lake Nipissing </li>
+  <li>3 hours away from Toronto </li>
+
+  <dt>Number of Students:</dt>
+  <li>5,679</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition CAD 12,500- CAD 15,000 </li>
+  <li>International tuition CAD 23,190.00</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Completion of Ontario Secondary School Diploma (OSSD) </li>
+  <li>Minimum of six 4U/4M courses including ENG4U </li>
+  <li>Top 6 must be at 70% or higher  </li>
+
+
+  <dt>International rating:</dt>
+  <li>2189</li>
+
+  <dt>Canadian rating:</dt>
+  <li>63</li>
+
+  <dt>Average class size:</dt>
+  <li>29</li>
+</ul>
+
+<img src="Nipissing_University_Brantford_Campus.jpg" alt="scots_greys" width="60" height="80">
+
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

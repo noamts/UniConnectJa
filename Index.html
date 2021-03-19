@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+    <h2>Uni Connect a JA company</h2>	
+  <h2>Giving students guidance for their academic future, through connections and personalized information.</h2>
+ 
+  <p>Uni Connect will allow you to connect and interact with current university students in Ontario to find the best school and program for you. </p>
+</div>
+
+
+
+<div class="card">
+      <h2>About Us</h2>
+      <!--<h5>Title description, Dec 7, 2017</h5>-->
+      <img src="logo.png" alt="logo" width="95" height="85">
+      <p>Uni Connect is a small startup created by high school students in the JA Company Program whose sole purpose is to provide <br>
+other high school students with the information that they need to provide a smooth transition into university. <br>
+Our main avenue is through providing a secure and simple method of providing an in depth Q and A on any question that a future <br>
+university student might have. This is done through an indirect approach, the high school student fills out a form with their <br>
+preferred university and program as well as one or more questions that they would like answered by a student in this program. <br>
+We will direct this to said student, and they will send us a video response. At this point the high school student <br>
+will then be given the video on payment of a small fee of which the majority will go to the university student in payment. <br>
+This process is as secure as the software we used.</p>
+      <p></p>
+    </div>
+
+
+    <div class="card">
+      <h2>About JA</h2>
+      <img src="ja_central_ontario_smallformat_secondary_preferred.png" alt="logo" width="95" height="85">
+      <p>Our online programs give students in grades 3-12 the tools to become financially capable adults and entrepreneurs.</p>
+      <p>Working with Corporate Partners, we create important connections to the workforce through online tools. webinars and experiential learning.</p>
+          <a href="https://www.jacentralontario.org/">https://www.jacentralontario.org/</a>
+</div>
+
+
+<div class="card">
+      <h2></h2>
+      <img src="  " alt="logo" width="95" height="85">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <a href="  ">  </a>
+
+    <div class="card">
+      <h2>Our Team</h2>
+      <img src="logo.png" alt="logo" width="45" height="35">
+      <p>We are a small group of dedicted high school students going through the JA Company program. </p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+
+
+
+<div class="footer">
+	      <a href="https://www.jacentralontario.org/"><img src="github icon.jpg" alt="logo" width="40" height="25"></a> 	      <a href="https://www.jacentralontario.org/"><img src="72a3d9408d41335f39e9f014dc35cf44.jpg" alt="logo" width="40" height="25"></a>	      <a href="https://www.jacentralontario.org/"><img src="github icon.jpg" alt="logo" width="40" height="25"></a>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+<!-- n- -->
+</html>

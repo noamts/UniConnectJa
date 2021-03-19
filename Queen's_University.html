@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Queen’s University </h2>
+
+  <p> The Noteable programs at Queen's are Engineering, Commerce, and Health Sciences.<br>
+	It is located in Kingston Ontario (map) and is a 3 hour drive brom both Toronto and Montreal.<br>
+	the university curently houses 24,143 students.</p>
+  <p>The tuition varies based on the program however on average the tuition is 27,513 CAD</p>
+  <p>for most programs at queen's you will need at least an 80 avrage in order to be considered.<br>
+Both comerce and health science need a suplementry aplication<br>
+Queen's has a axceptance rte of aproxamatly 42%<br>
+the avrage class size is 341 however this as well as the tuition and entry requirements will vary by the program</p>
+<p>the international rateing of Queen's is 246 and the canadian rateing is 7. <br>
+Queen's is the best Canadian university for extracariculars.
+<br>Queen's has one of  the highest graduation rates in Canada</p>
+
+<a href="https://www.google.ca/maps/place/Queen's+University/@44.2252795,-76.4973299,17z/data=!3m1!4b1!4m5!3m4!1s0x4cd2ab0fccd925e9:0x268a8a4f5c257211!8m2!3d44.2252795!4d-76.4951412">Location</a>
+
+
+<img src="WEB NEW Campus Drone DJI_0015-w.jpg" alt="scots_greys" width="60" height="80">
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>Arthur B. McDonald CC OOnt ONS FRS FRSC, joint nobel prize resipient for physics, solved the solar neutrino problem, one of the leaders of a project to mass-produce mechanical ventilators during the SARS-CoV-2 pandemic.</p>
+    <p class="author">- Held the Gordon and Patricia Gray Chair in Particle Astrophysics at Queen's University.</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Elon Musk; founder of Spacex, Tesla, Boring, Et Cetera</p>
+    <p class="author">- studied at Queen's for two years before moveing to Pensilvania.</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Derek Hudson Burney OC, former Canadian imbasitor to the US. </q>
+    <p class="author">- Receved his B.A and M.A at Queen's</p>
+  </div>
+
+<div class="mySlides">
+    <p>The Right Honourable Sir Robert Laird Borden GCMG PC KC, Prime Minister of Canada 1911-1920</p>
+    <p class="author">- Chancellor of Queens university 1944-1930. </p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+</div>
+
+
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Mc Master</h2>
+
+
+<p>
+McMaster has been a consistently top ranked university in Canada due to its high quality programs
+<br>and upholding prestige. McMaster has been home to three Nobel Prize winners, tech innovators,
+<br>and top industrialists. Its diverse environment and professional proficiency makes McMasters one
+<br>of the best universities to attend in Canada.
+<br>McMaster is the home of the largest research nuclear reactor in the Commonwealth. 
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Biology </li>
+  <li>Health Sciences</li>
+  <li>Life Sciences </li>
+  <li>Engineering</li>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/search/mcmaster+university/@43.3140392,-79.9205228,12z/data=!3m1!4b1">Map</a></li>
+  <li> Hamilton, ON  </li>
+
+  <dt>Number of Students:</dt>
+  <li>33,147</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition 5,966.4 CAD </li>
+  <li>International tuition 22,471.2 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Completion of Ontario Secondary School Diploma (OSSD) </li>
+  <li>ENG4U and MCV4U are essential for most programs but SCH4U and SPH4U are required for some science programs</li>
+
+
+
+  <dt>International rating:</dt>
+  <li>133</li>
+
+  <dt>Canadian rating:</dt>
+  <li>4th</li>
+
+  <dt>Average class size:</dt>
+  <li>200 - 400</li>
+</ul>
+
+  <img src="220px-MDCL_Building_at_McMaster_University.jpg" alt="scots_greys" width="60" height="80">
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>Bertram Brockhouse, CC FRSC FRS</p>
+    <p class="author">- Canadian physicist who was awardeded the nobel prize for physics in 1994, profesor at McMaster from 1962 to 1984</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Donna Strickland, FRS CC</p>
+    <p class="author">-  Canadian optical physicist and pioneer in the field of pulsed lasers, awarded the Nobel Prize in Physics in 2018, with Gérard Mourou, for the practical implementation of chirped pulse amplification, graduated from McMaster in 1981 with a degree in engenering physics.</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Tihomir Orešković</p>
+    <p class="author">- Prime minister of Croatia in 2016, in 1991 he graduated with a degree in chemistry from McMaster University</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+//var subjectObject = {
+//  "Front-end": {
+//    "HTML": ["Links", "Images", "Tables", "Lists"],
+//    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+//    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]
+//  },
+//  "Back-end": {
+//    "PHP": ["Variables", "Strings", "Arrays"],
+//    "SQL": ["SELECT", "UPDATE", "DELETE"]
+//  }
+//}
+//window.onload = function() {
+//  var subjectSel = document.getElementById("subject");
+//  var topicSel = document.getElementById("topic");
+//  var chapterSel = document.getElementById("chapter");
+//  for (var x in subjectObject) {
+//    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+//  }
+//  subjectSel.onchange = function() {
+//    //empty Chapters- and Topics- dropdowns
+//    chapterSel.length = 1;
+//    topicSel.length = 1;
+//    //display correct values
+//    for (var y in subjectObject[this.value]) {
+//      topicSel.options[topicSel.options.length] = new Option(y, y);
+//    }
+//  }
+//  topicSel.onchange = function() {
+//    //empty Chapters dropdown
+//    chapterSel.length = 1;
+//    //display correct values
+//    var z = subjectObject[subjectSel.value][this.value];
+//    for (var i = 0; i < z.length; i++) {
+//      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+//    }
+//  }
+//}
+</script>
+
+</body>
+<!-- n- -->
+</html>

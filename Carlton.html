@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Carlton</h2>
+
+
+<p>
+Carleton University is located in Canada’s capital: Ottawa. It is between the Rideau canal and river,
+<br>close to the Quebec border. The top programs at Carleton are journalism, public affairs,
+<br>international affairs, architecture and technology. While it varies for different programs, a minimum
+<br>average of 70% is required and certain programs require portfolios, auditions and supplementary
+<br>applications. With over 300 clubs and societies, Carleton has many opportunities for involvement
+<br>and community building. The Ottawa location brings many advantages such as parliamentary
+<br>work opportunities and skating on the Rideau during the winter.
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Journalism </li>
+  <li>Public affairs </li>
+  <li>International affairs </li>
+  <li>Architecture </li>
+  <li>Technology </li>
+
+
+  <dt>Location</dt>
+  <li><a href="https://www.google.ca/maps/place/Carleton+University/@45.3875812,-75.6982089,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce05d8d37fecc3:0xbf5d8d7821b8dcdc!8m2!3d45.3875812!4d-75.6960202">Map</a></li>
+  <li>Ottawa, Ontario </li>
+
+
+  <dt>Number of Students:</dt>
+  <li>31,522</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition CAD $21,800– $26,345 (living on campus)</li>
+  <li>International tuition CAD 42,721 – 54,336(on campus living)</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Minimum academic average of 70% </li>
+  <li>Architecture, Industrial Design, Humanities (Great Books) and Information Technology (Interactive Multimedia and Design) require a portfolio </li>
+  <li>Music requires an audition.</li>
+  <li>Social Work requires a supplementary application.</li>
+
+  <dt>International rating:</dt>
+  <li>501</li>
+
+  <dt>Canadian rating:</dt>
+  <li>23</li>
+
+
+</ul>
+
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

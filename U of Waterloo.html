@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>U of Waterloo</h2>
+
+
+<p>The University of Waterloo is based in Waterloo, Ontario on nearly 1000 acres of land. The university 
+<br>is well known for the co-op program which is one of the largest in the world with over 20,000 
+<br>students enrolled. The university is also well known for its computer science, engineering, 
+<br>and mathematics programs. 
+
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Computer Science</li>
+  <li>Engineering</li>
+  <li>Mathematics</li>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/place/University+of+Waterloo/@43.4722854,-80.5470463,17z/data=!3m1!4b1!4m5!3m4!1s0x882bf6ad02edccff:0xdd9df23996268e17!8m2!3d43.4722854!4d-80.5448576">Brock</a></li>
+  <li>Waterloo Ontario </li>
+  <li>One hour drive from Toronto </li>
+
+  <dt>Number of Students:</dt>
+  <li>41,000</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>11,061 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Required Supplemental application</li>
+  <li>Optional online interview</li>
+  <li>Competitive programs (CS, Eng, Math): mid to high 90’s </li>
+
+  <dt>International rating:</dt>
+  <li>166th</li>
+
+  <dt>Canadian rating:</dt>
+  <li>3rd</li>
+
+  <dt>Average class size:</dt>
+  <li>180</li>
+</ul>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>Donna Strickland, FRS CC</p>
+    <p class="author">- optical physicist and pioneer in the field of pulsed lasers, awarded the Nobel Prize in Physics in 2018, together with Gérard Mourou, for the practical implementation of chirped pulse amplification, professor at the University of Waterloo</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Colonel Chris Hadfield, OC OOnt MSC CD</p>
+    <p class="author">- etired CSA astronaut, engineer, science communicator, singer, and former Royal Canadian Air Force fighter pilot, conducted his post-graduate research at the University of Waterloo</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Mike Lazaridis, OC, O.Ont, FRS</q>
+    <p class="author">- businessman, investor in quantum computing technologies, and founder of BlackBerry, enrolled at the University of Waterloo in electrical engineering</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

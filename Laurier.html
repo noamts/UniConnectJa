@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Laurier</h2>
+
+
+<p>
+Wilfrid Laurier University has been a school of high academic excellence since 1911. Laurier is
+<br>located mainly in Waterloo, Ontario, but has two other campuses in Brantford, Ontario and
+<br>Kitchener, Ontario. Laurier offers 90 programs and is home to around 19,000 students. Students are
+<br>encouraged to apply their knowledge they learn to their everyday lives and is what the Laurier
+<br>experience is all about. This can be applied through co-op programs and community service, then
+<br>using these real-life experiences back in the classroom. Innovative programs range from arts and
+<br>social sciences, social work, science, business and economics. Laurier's acceptance rate is 89% but
+<br>will vary depending on the program. As well, the tuition, class sizes and entry requirements vary
+<br>depending on the program which is desired. 
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Arts and Social Sciences </li>
+  <li>Business and Economics </li>
+
+
+  <dt>Location</dt>
+  <li><a href="https://www.google.ca/maps/search/Wilfrid+Laurier+University+/@43.1397798,-80.2631756,17z/data=!3m1!4b1">Map</a></li>
+  <li>Waterloo, Ontario (Main) </li>
+  <li>Brantford, Ontario </li>
+  <li>Kitchener, Ontario </li>
+
+  <dt>Number of Students:</dt>
+  <li>19, 000</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition ? CAD </li>
+  <li>International tuition 21, 434 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Minimum academic average of 70% </li>
+  <li>A minimum of six 4U and/or 4M courses </li>
+  <li>ENG4U</li>
+
+  <dt>International rating:</dt>
+  <li>1126</li>
+
+  <dt>Canadian rating:</dt>
+  <li>30</li>
+
+  <dt>Average class size:</dt>
+  <li>94 students (first and second year students), 35 students (third and fourth year students)</li>
+</ul>
+
+<img src="quad-banner.jpg" alt="photo" width="95" height="105">
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

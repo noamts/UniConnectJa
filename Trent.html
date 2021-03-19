@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+<div class="content">
+  <h2>Trent</h2>
+
+
+<p>
+Trent University is a unique university that has two locations, the main campus is located in Peterborough, Ontario,
+<br>and the other one is located in Durham allows for people of all locations to attend Trent. Trent University is known 
+<br>for its real world experiential programs as well as its small class sizes to allow for great discussions and maximized learning.  
+<br>Trent prides itself on rigorous programs with all the benefits of high-quality research and interactive teaching within a personal, 
+<br>close-knit community. 
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Environmental science </li>
+  <li>Canadian and Indigenous Studies</li>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/place/Trent+University+Durham+GTA/@57.9226666,-130.2385835,3z/data=!4m8!1m2!2m1!1strent+university!3m4!1s0x89d51dae5d171a37:0xf2ee1c71671c6e89!8m2!3d43.8896788!4d-78.8905517">Map</a></li>
+  <li>Main campus in Peterborough </li>
+  <li>Satellite campus in Durham</li>
+
+  <dt>Number of Students:</dt>
+  <li>11,079</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Domestic tuition 8,008 CAD, </li>
+  <li>International tuition 21,294  CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Ontario Secondary School Diploma (OSSD)</li>
+  <li>A minimum of six Grade 12 4U or 4M courses, including program-specific prerequisites</li>
+  <li>A minimum 70% overall final average</li>
+  <li>ENG4U with a minimum of 60%</li>
+
+  <dt>International rating:</dt>
+  <li>1237</li>
+
+  <dt>Canadian rating:</dt>
+  <li>36</li>
+
+  <dt>Average class size:</dt>
+  <li>First and Second year: 71</li>
+  <li>Third and Fourth year:  22</li>
+</ul>
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>Stewart Wheeler</p>
+    <p class="author">- Canadian ambasitor to Ireland, graduated from Trent uiniversity in 1992</p>
+  </div>
+
+  <div class="mySlides">
+    <p>James Orbinski, OC OOnt MSC</p>
+    <p class="author">-  physician, humanitarian activist, author, leading scholar in global health, and recipiant of the Nobel Peace Prize, receved a degree in Psycology in 1984 from the university of Trent</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Ian Affleck</p>
+    <p class="author">- physicist specializing in condensed matter physics, recieved a degree at Trent</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

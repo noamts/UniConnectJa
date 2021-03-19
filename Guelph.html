@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Guelph</h2>
+ 
+
+
+<p>
+The University of Guelph is a university located in Guelph,Ontario. It is one of the top
+<br>comprehensive universities in Canada and was established in 1964. Through the collaboration of
+<br>Humber College, The university of Guelph-Humber which is located in Toronto,Ontario offers a
+<br>special applied learning that allows students to obtain both a university degree and college
+<br>diploma. The University of Guelph is known for its excellence in arts and sciences. It is mainly
+<br>known for Canada's Food University. The University of Guelph is ranked top 20 in Canada and top
+<br>500 in the world. This university offers 94 undergraduate degrees, 48 graduate programs and 6
+<br>associate degrees. University of Guelph provides workplace experience in all of their programs
+<br>which makes it exciting to learn. 
+</p>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Environmental Science </li>
+  <li>Physical and biological sciences </li>
+  <li>Arts</li>
+
+  <dt>Location</dt>
+  <li><a href="https://www.google.ca/maps/place/University+of+Guelph/@43.5327217,-80.2283691,17z/data=!3m1!4b1!4m5!3m4!1s0x882b9b3c1d38a0b7:0x8feb99e54d4013c7!8m2!3d43.5327217!4d-80.2261804">Map</a></li>
+  <li>City of Guelph, 1 Hour Drive to Toronto </li>
+
+  <dt>Number of Students:</dt>
+  <li>28,687</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition 14,090 CAD </li>
+  <li>International tuition 35,467 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Need low 80s to be considered for most programs </li>
+  <li>A minimum of six 4U and/or 4M courses </li>
+  <li>ENG4U</li>
+
+  <dt>International rating:</dt>
+  <li>580</li>
+
+  <dt>Canadian rating:</dt>
+  <li>19th</li>
+
+  <dt>Average class size:</dt>
+  <li>60% of undergraduate classes on Guelph campus have less than 50 students, Only 6% have over 250 students</li>
+</ul>
+<img src="1534223829phpw7vUrk.jpeg" alt="scots_greys" width="110" height="100">
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>Karen Beauchemin</p>
+    <p class="author">- An internationaly recognised authoraty on neutrition and meathne emmisions, went to the university of Guelph in 1988</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Mark Bourrie</p>
+    <p class="author">- journalist, author, hstorian, and lecturer holds a diploma of pubic policy and administration from the university of Guelph. </p>
+  </div>
+
+  <div class="mySlides">
+    <p>Timothy Bray</p>
+    <p class="author">- software developer, environmentalist, and political activist, attended university of Guelph and graduated in 1981</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

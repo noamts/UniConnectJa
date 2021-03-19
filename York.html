@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>York</h2>
+ 
+
+
+<p>York University is located in Uptown Toronto. York has eight colleges that make up the university, 
+<br>these include Bethune College, Calumet College, Founders College, McLaughlin College, 
+<br>New College, Stong College and Vanier College. York is a leading institution in education and science 
+<br>and is known for its unique international locations. When studying at York you will have many opportunities 
+<br>to have hands-on experience. York prides itself on its high job rates for alumni, with 92% of students 
+<br>getting a job two years after graduation. York has a strong student life with over 130 clubs and committees. </p>
+
+<ul>
+
+  <dt>Location </dt>
+  <li><a href="https://www.google.ca/maps/place/York+University/@43.7734535,-79.5040571,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cd330b767bfb:0xdbb899cc9da76d19!8m2!3d43.7734535!4d-79.5018684">Map</a></li>
+  <li>Toronto Ontario </li>
+
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition is 7758 CAD</li>
+  <li>International Tuition is 26,978.4 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>To be considered for most of the programs, you need an average of at least the low 80’s</li>
+  <li>There is no supplementary application forms</li>
+
+  <dt>International rating:</dt>
+  <li>432</li>
+
+  <dt>Canadian rating:</dt>
+  <li>19</li>
+
+  <dt>Average class size:</dt>
+  <li>180</li>
+</ul>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <p>Steve MacLean, FRCGS</p>
+    <p class="author">- Astronaut and former President of the Canadian Space Agency, in 1983 he receved a doctorate in physics from York University</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Jack Layton, PC MSC</p>
+    <p class="author">- Canadian politician and leader of the Official Opposition et cetera, receved a masters degree from York university</p>
+  </div>
+
+  <div class="mySlides">
+    <p>Lincoln Alexander</p>
+    <p class="author">- Member of parliament in the house of commons, atended York university</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>

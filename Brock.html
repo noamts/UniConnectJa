@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>University</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="master_css2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<div class="topnav">
+<a href="home.html"><img src="logo.png" alt="logo" width="45" height="35"></a>
+  <a href="contact.html">Contact</a>
+<a href="student question.html">Ask a question to a student at one of Ontario's universities.</a>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">List Of Universities</button>
+    <div id="myDropdown" class="dropdown-content">
+	    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	    <a href="Brock.html">Brock</a>
+	    <a href="Carlton.html">Carlton</a>
+	    <a href="Guelph.html">Guelph</a>
+	    <a href="lakehead.html">lakehead</a>
+	    <a href="Laurier.html">Laurier</a>
+	    <a href="Mc Master.html">Mc Master</a>
+	    <a href="Nipissing.html">Nipissing</a>
+	    <a href="Queen's_University.html">Queen's_University</a>
+	    <a href="Ryerson.html">Ryerson</a>
+	    <a href="Trent.html">Trent</a>
+	    <a href="U of Ottawa.html">U of Ottawa</a>
+	    <a href="UofT.html">UofT.html</a>
+	    <a href="U of Waterloo.html">U of Waterloo</a>
+	    <a href="U of Windsor.html">U of Windsor</a>
+	    <a href="western.html">western</a>
+	    <a href="York.html">York</a>
+    </div>
+    </div>
+  </div>
+
+<div class="content">
+  <h2>Brock</h2>
+
+
+
+<p>
+Brock University is located in Saint Catherines Ontario, a short drive to Niagara Falls and an hour
+<br>drive to Toronto. Brock prides themself on their strong student satisfaction rating, and amazing
+<br>mental health services. Brock has 100+ unique programs including, A BBA International Double
+<br>Degree, Criminology and so many more. Brock also offers experiential learning inside and outside
+<br>the classroom, Brock has over 20 different types of invaluable opportunities built into our courses.
+<br>As well, Brock has a strong sports presence with over 25 varsity sports. 
+<br>This University was named adter Major-General Sir Isaac Brock. 
+</P>
+
+<ul>
+  <dt>Top Programs</dt>
+  <li>Concurrent Education  </li>
+  <li>Sport Management </li>
+  <li>Game Design  </li>
+
+
+  <dt>Location</dt>
+  <li><a href="https://www.google.ca/maps/place/Brock+University/@43.1175731,-79.2498812,17z/data=!3m1!4b1!4m5!3m4!1s0x89d34e32f9f0e4a5:0xdb7b89e6cdaba7d2!8m2!3d43.1175731!4d-79.2476925">Map</a></li>
+  <li>Saint Catharines Ontario  </li>
+  <li>Just over an hour drive from Toronto  </li>
+
+
+  <dt>Number of Students:</dt>
+  <li>19,100</li>
+
+  <dt>Average Tuition:</dt>
+  <li>Tuition varies on the program </li>
+  <li>Domestic tuition 6,476  CAD </li>
+  <li>International tuition 23,861 CAD</li>
+
+  <dt>Entry Requirements:</dt>
+  <li>Minimum academic average of 70% (many programs require a higher average)</li>
+  <li>A minimum of six 4U and/or 4M courses </li>
+  <li>You must meet English language proficiency requirements.</li>
+
+  <dt>International rating:</dt>
+  <li>1204</li>
+
+  <dt>Canadian rating:</dt>
+  <li>38</li>
+
+  <dt>Average class size:</dt>
+  <li>88 students (first and second year students), 33 students (third and fourth year students)</li>
+</ul>
+
+<img src="Aerial-Drone-2017-002-1600x899.jpg" alt="scots_greys" width="90" height="100">
+
+</div>
+
+<div class="footer">
+  <p>admin, github, etc</p>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+</script>
+
+</body>
+<!-- n- -->
+</html>
